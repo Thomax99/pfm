@@ -34,105 +34,84 @@ src/linear_algebra/matrix/matrix8x4.h:151:13: note: « double * » attendu mai
 ar: création de src/variational_form/variational_form.a
 ar: création de src/solvers/solvers.a
 ar: création de src/benchmarks/common/benchmarks_common.a
-ld : avertissement : libdl.so.2, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
+ld : avertissement : libX11.so.6, requis par /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so, non trouvé (essayez avec -rpath ou -rpath-link)
+ld : avertissement : libdl.so.2, requis par /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : libudev.so.1, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : librt.so.1, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : libutil.so.1, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : libz.so.1, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflateEnd »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_new@LIBUDEV_183 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflate »
 ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflateBound@ZLIB_1.2.0 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflateInit_ »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « openpty@GLIBC_2.2.5 »
-ld : /cm/shared/modules/intel/skylake/compiler/gcc/11.2.0/lib64/../lib64/libgomp.so : référence indéfinie vers « dlopen@GLIBC_2.2.5 »
-ld : /cm/shared/modules/intel/skylake/compiler/gcc/11.2.0/lib64/../lib64/libgomp.so : référence indéfinie vers « dlerror@GLIBC_2.2.5 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflate »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflateEnd »
-ld : /cm/shared/modules/intel/skylake/compiler/gcc/11.2.0/lib64/../lib64/libgomp.so : référence indéfinie vers « dlclose@GLIBC_2.2.5 »
-ld : /cm/shared/modules/intel/skylake/compiler/gcc/11.2.0/lib64/../lib64/libgomp.so : référence indéfinie vers « dlsym@GLIBC_2.2.5 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_unref@LIBUDEV_183 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so : référence indéfinie vers « clock_getres@GLIBC_2.2.5 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_device_get_property_value@LIBUDEV_183 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so : référence indéfinie vers « clock_gettime@GLIBC_2.2.5 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_device_new_from_subsystem_sysname@LIBUDEV_183 »
-ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflateInit_ »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetWMProperties »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCheckTypedEvent »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « dlopen@GLIBC_2.2.5 »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_new@LIBUDEV_183 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetForeground »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XDrawString »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetWMName »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XStoreColor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCreateWindow »
 ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_device_unref@LIBUDEV_183 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XTranslateCoordinates »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XOpenDisplay »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XWindowEvent »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFreeFontInfo »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XGetGeometry »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_device_new_from_subsystem_sysname@LIBUDEV_183 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XClearWindow »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XDrawLine »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCreatePixmap »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFreePixmap »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XAllocNamedColor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XQueryPointer »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSync »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XAllocColor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCreateColormap »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « dlclose@GLIBC_2.2.5 »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflate »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCreateGC »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XStringListToTextProperty »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XDefineCursor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XGetWindowAttributes »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XUndefineCursor »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so : référence indéfinie vers « clock_getres@GLIBC_2.2.5 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XMapWindow »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCreateFontCursor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XQueryFont »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFreeCursor »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflateInit_ »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_unref@LIBUDEV_183 »
+ld : /cm/shared/modules/intel/haswell/parallel_studio/2019_update4/mkl/lib/intel64/libmkl_intel_lp64.so : référence indéfinie vers « dladdr@GLIBC_2.2.5 »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflateInit_ »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFillPolygon »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFillRectangle »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetWindowColormap »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « openpty@GLIBC_2.2.5 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFree »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XQueryColors »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « dlsym@GLIBC_2.2.5 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetWindowBackground »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XMaskEvent »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFillArc »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so : référence indéfinie vers « clock_gettime@GLIBC_2.2.5 »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « dlerror@GLIBC_2.2.5 »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-pal.so.40 : référence indéfinie vers « udev_device_get_property_value@LIBUDEV_183 »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflate »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XLoadFont »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSelectInput »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XChangeGC »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « deflateEnd »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XMatchVisualInfo »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XParseColor »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XGetWMName »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XResizeWindow »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XGetImage »
+ld : /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libopen-rte.so.40 : référence indéfinie vers « inflateEnd »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCloseDisplay »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XDrawPoint »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XCopyArea »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetClipRectangles »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XSetIOErrorHandler »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XListFontsWithInfo »
+ld : /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so : référence indéfinie vers « XFreeGC »
 collect2: erreur: ld a retourné le statut de sortie 1
 make: *** [bin/poisson2d_cg] Erreur 1
-simplex3x8.o src/mesh/mesh.o src/mesh/mesh_entities.o src/mesh/mesh_entity_function.o src/mesh/mesh_entity_map.o src/mesh/mesh_entity_types.o src/mesh/mesh_function.o src/mesh/mesh_partitioning.o src/mesh/mesh_reordering.o src/mesh/simplex.o src/mesh/singleton_mesh.o src/mesh/submesh.o src/mesh/tetgen_mesh.o src/mesh/unit_mesh.o
-a - src/mesh/cells/empty.o
-a - src/mesh/cells/simplex0.o
-a - src/mesh/cells/simplex1.o
-a - src/mesh/cells/simplex2.o
-a - src/mesh/cells/simplex3.o
-a - src/mesh/cells/simplex3x4.o
-a - src/mesh/cells/simplex3x8.o
-a - src/mesh/mesh.o
-a - src/mesh/mesh_entities.o
-a - src/mesh/mesh_entity_function.o
-a - src/mesh/mesh_entity_map.o
-a - src/mesh/mesh_entity_types.o
-a - src/mesh/mesh_function.o
-a - src/mesh/mesh_partitioning.o
-a - src/mesh/mesh_reordering.o
-a - src/mesh/simplex.o
-a - src/mesh/singleton_mesh.o
-a - src/mesh/submesh.o
-a - src/mesh/tetgen_mesh.o
-a - src/mesh/unit_mesh.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/fem/finite_element_space.c -o src/fem/finite_element_space.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/fem/finite_element_space_function.c -o src/fem/finite_element_space_function.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/fem/finite_element_types.c -o src/fem/finite_element_types.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/fem/lagrange.c -o src/fem/lagrange.o
-ar rv src/fem/fem.a src/fem/finite_element_space.o src/fem/finite_element_space_function.o src/fem/finite_element_types.o src/fem/lagrange.o
-a - src/fem/finite_element_space.o
-a - src/fem/finite_element_space_function.o
-a - src/fem/finite_element_types.o
-a - src/fem/lagrange.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/assembly/assembly_algorithm.c -o src/variational_form/assembly/assembly_algorithm.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/bilinear_form/laplacian.c -o src/variational_form/bilinear_form/laplacian.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/bilinear_form/mass_matrix.c -o src/variational_form/bilinear_form/mass_matrix.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/bilinear_form/scatter_to_global_matrix.c -o src/variational_form/bilinear_form/scatter_to_global_matrix.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/coefficient_function.c -o src/variational_form/coefficient_function.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/functional/coefficient_integral.c -o src/variational_form/functional/coefficient_integral.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/functional/coefficient_l2_norm.c -o src/variational_form/functional/coefficient_l2_norm.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/functional/gather_vertex_coordinates.c -o src/variational_form/functional/gather_vertex_coordinates.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/functional/transform_to_reference_cell.c -o src/variational_form/functional/transform_to_reference_cell.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/functional/volume.c -o src/variational_form/functional/volume.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/linear_form/argument_integral.c -o src/variational_form/linear_form/argument_integral.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/linear_form/load_vector.c -o src/variational_form/linear_form/load_vector.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/linear_form/pointwise_projection.c -o src/variational_form/linear_form/pointwise_projection.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/linear_form/scatter_to_global_vector.c -o src/variational_form/linear_form/scatter_to_global_vector.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/variational_form.c -o src/variational_form/variational_form.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/variational_form/variational_form_types.c -o src/variational_form/variational_form_types.o
-ar rv src/variational_form/variational_form.a src/variational_form/assembly/assembly_algorithm.o src/variational_form/bilinear_form/laplacian.o src/variational_form/bilinear_form/mass_matrix.o src/variational_form/bilinear_form/scatter_to_global_matrix.o src/variational_form/coefficient_function.o src/variational_form/functional/coefficient_integral.o src/variational_form/functional/coefficient_l2_norm.o src/variational_form/functional/gather_vertex_coordinates.o src/variational_form/functional/transform_to_reference_cell.o src/variational_form/functional/volume.o src/variational_form/linear_form/argument_integral.o src/variational_form/linear_form/load_vector.o src/variational_form/linear_form/pointwise_projection.o src/variational_form/linear_form/scatter_to_global_vector.o src/variational_form/variational_form.o src/variational_form/variational_form_types.o
-a - src/variational_form/assembly/assembly_algorithm.o
-a - src/variational_form/bilinear_form/laplacian.o
-a - src/variational_form/bilinear_form/mass_matrix.o
-a - src/variational_form/bilinear_form/scatter_to_global_matrix.o
-a - src/variational_form/coefficient_function.o
-a - src/variational_form/functional/coefficient_integral.o
-a - src/variational_form/functional/coefficient_l2_norm.o
-a - src/variational_form/functional/gather_vertex_coordinates.o
-a - src/variational_form/functional/transform_to_reference_cell.o
-a - src/variational_form/functional/volume.o
-a - src/variational_form/linear_form/argument_integral.o
-a - src/variational_form/linear_form/load_vector.o
-a - src/variational_form/linear_form/pointwise_projection.o
-a - src/variational_form/linear_form/scatter_to_global_vector.o
-a - src/variational_form/variational_form.o
-a - src/variational_form/variational_form_types.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/solvers/poisson.c -o src/solvers/poisson.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/solvers/projection.c -o src/solvers/projection.o
-ar rv src/solvers/solvers.a src/solvers/poisson.o src/solvers/projection.o
-a - src/solvers/poisson.o
-a - src/solvers/projection.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/benchmarks/common/benchmark_options.c -o src/benchmarks/common/benchmark_options.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI -iquote src src/benchmarks/common/mesh_options.c -o src/benchmarks/common/mesh_options.o
-ar rv src/benchmarks/common/benchmarks_common.a src/benchmarks/common/benchmark_options.o src/benchmarks/common/mesh_options.o
-a - src/benchmarks/common/benchmark_options.o
-a - src/benchmarks/common/mesh_options.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI  -iquote src src/benchmarks/poisson2d/program_options.c -o src/benchmarks/poisson2d/program_options.o
-gcc -c -g -Wall -fopenmp -DHAVE_MPI  -iquote src src/benchmarks/poisson2d/poisson2d_cg_seq.c -o src/benchmarks/poisson2d/poisson2d_cg_seq.o
-gcc -g -Wall -fopenmp -DHAVE_MPI -iquote src src/benchmarks/poisson2d/program_options.o src/benchmarks/poisson2d/poisson2d_cg_seq.o src/solvers/solvers.a src/variational_form/variational_form.a src/fem/fem.a src/mesh/mesh.a src/linear_solver/linear_solver.a src/linear_algebra/linear_algebra.a src/util/util.a   -L"/cm/shared/modules/generic/mpi/openmpi/4.0.2/lib" -lmpi -lm -o bin/poisson2d_cg
