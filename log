@@ -1,8 +1,107 @@
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/array.c -o src/util/array.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/combinations.c -o src/util/combinations.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/cuthill_mckee.c -o src/util/cuthill_mckee.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/matrix_market.c -o src/util/matrix_market.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/parse.c -o src/util/parse.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/partition.c -o src/util/partition.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/perf_events.c -o src/util/perf_events.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/perf_sessions.c -o src/util/perf_sessions.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/permutation.c -o src/util/permutation.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/prefix_sum.c -o src/util/prefix_sum.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/print.c -o src/util/print.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/radix_sort.c -o src/util/radix_sort.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/sample_statistics.c -o src/util/sample_statistics.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/selections.c -o src/util/selections.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/sort.c -o src/util/sort.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/util/stream_compaction.c -o src/util/stream_compaction.o
+ar rv src/util/util.a src/util/array.o src/util/combinations.o src/util/cuthill_mckee.o src/util/matrix_market.o src/util/parse.o src/util/partition.o src/util/perf_events.o src/util/perf_sessions.o src/util/permutation.o src/util/prefix_sum.o src/util/print.o src/util/radix_sort.o src/util/sample_statistics.o src/util/selections.o src/util/sort.o src/util/stream_compaction.o
 ar: création de src/util/util.a
+a - src/util/array.o
+a - src/util/combinations.o
+a - src/util/cuthill_mckee.o
+a - src/util/matrix_market.o
+a - src/util/parse.o
+a - src/util/partition.o
+a - src/util/perf_events.o
+a - src/util/perf_sessions.o
+a - src/util/permutation.o
+a - src/util/prefix_sum.o
+a - src/util/print.o
+a - src/util/radix_sort.o
+a - src/util/sample_statistics.o
+a - src/util/selections.o
+a - src/util/sort.o
+a - src/util/stream_compaction.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/linear_algebra/sparse/csr_matrix_int32.c -o src/linear_algebra/sparse/csr_matrix_int32.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/linear_algebra/sparse/csr_matrix_int32_int32.c -o src/linear_algebra/sparse/csr_matrix_int32_int32.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/linear_algebra/sparse/ellpack_matrix_int32.c -o src/linear_algebra/sparse/ellpack_matrix_int32.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/linear_algebra/tensor.c -o src/linear_algebra/tensor.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/linear_algebra/tensor_mode.c -o src/linear_algebra/tensor_mode.o
+ar rv src/linear_algebra/linear_algebra.a src/linear_algebra/sparse/csr_matrix_int32.o src/linear_algebra/sparse/csr_matrix_int32_int32.o src/linear_algebra/sparse/ellpack_matrix_int32.o src/linear_algebra/tensor.o src/linear_algebra/tensor_mode.o
 ar: création de src/linear_algebra/linear_algebra.a
+a - src/linear_algebra/sparse/csr_matrix_int32.o
+a - src/linear_algebra/sparse/csr_matrix_int32_int32.o
+a - src/linear_algebra/sparse/ellpack_matrix_int32.o
+a - src/linear_algebra/tensor.o
+a - src/linear_algebra/tensor_mode.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -isystem "/cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//include" -iquote src src/linear_solver/ksp_solver.c -o src/linear_solver/ksp_solver.o
+ar rv src/linear_solver/linear_solver.a src/linear_solver/ksp_solver.o
 ar: création de src/linear_solver/linear_solver.a
+a - src/linear_solver/ksp_solver.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/empty.c -o src/mesh/cells/empty.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex0.c -o src/mesh/cells/simplex0.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex1.c -o src/mesh/cells/simplex1.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex2.c -o src/mesh/cells/simplex2.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex3.c -o src/mesh/cells/simplex3.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex3x4.c -o src/mesh/cells/simplex3x4.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/cells/simplex3x8.c -o src/mesh/cells/simplex3x8.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh.c -o src/mesh/mesh.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_entities.c -o src/mesh/mesh_entities.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_entity_function.c -o src/mesh/mesh_entity_function.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_entity_map.c -o src/mesh/mesh_entity_map.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_entity_types.c -o src/mesh/mesh_entity_types.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_function.c -o src/mesh/mesh_function.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_partitioning.c -o src/mesh/mesh_partitioning.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/mesh_reordering.c -o src/mesh/mesh_reordering.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/simplex.c -o src/mesh/simplex.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/singleton_mesh.c -o src/mesh/singleton_mesh.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/submesh.c -o src/mesh/submesh.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/tetgen_mesh.c -o src/mesh/tetgen_mesh.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/mesh/unit_mesh.c -o src/mesh/unit_mesh.o
+ar rv src/mesh/mesh.a src/mesh/cells/empty.o src/mesh/cells/simplex0.o src/mesh/cells/simplex1.o src/mesh/cells/simplex2.o src/mesh/cells/simplex3.o src/mesh/cells/simplex3x4.o src/mesh/cells/simplex3x8.o src/mesh/mesh.o src/mesh/mesh_entities.o src/mesh/mesh_entity_function.o src/mesh/mesh_entity_map.o src/mesh/mesh_entity_types.o src/mesh/mesh_function.o src/mesh/mesh_partitioning.o src/mesh/mesh_reordering.o src/mesh/simplex.o src/mesh/singleton_mesh.o src/mesh/submesh.o src/mesh/tetgen_mesh.o src/mesh/unit_mesh.o
 ar: création de src/mesh/mesh.a
+a - src/mesh/cells/empty.o
+a - src/mesh/cells/simplex0.o
+a - src/mesh/cells/simplex1.o
+a - src/mesh/cells/simplex2.o
+a - src/mesh/cells/simplex3.o
+a - src/mesh/cells/simplex3x4.o
+a - src/mesh/cells/simplex3x8.o
+a - src/mesh/mesh.o
+a - src/mesh/mesh_entities.o
+a - src/mesh/mesh_entity_function.o
+a - src/mesh/mesh_entity_map.o
+a - src/mesh/mesh_entity_types.o
+a - src/mesh/mesh_function.o
+a - src/mesh/mesh_partitioning.o
+a - src/mesh/mesh_reordering.o
+a - src/mesh/simplex.o
+a - src/mesh/singleton_mesh.o
+a - src/mesh/submesh.o
+a - src/mesh/tetgen_mesh.o
+a - src/mesh/unit_mesh.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/fem/finite_element_space.c -o src/fem/finite_element_space.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/fem/finite_element_space_function.c -o src/fem/finite_element_space_function.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/fem/finite_element_types.c -o src/fem/finite_element_types.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/fem/lagrange.c -o src/fem/lagrange.o
+ar rv src/fem/fem.a src/fem/finite_element_space.o src/fem/finite_element_space_function.o src/fem/finite_element_types.o src/fem/lagrange.o
 ar: création de src/fem/fem.a
+a - src/fem/finite_element_space.o
+a - src/fem/finite_element_space_function.o
+a - src/fem/finite_element_types.o
+a - src/fem/lagrange.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/assembly/assembly_algorithm.c -o src/variational_form/assembly/assembly_algorithm.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/bilinear_form/laplacian.c -o src/variational_form/bilinear_form/laplacian.o
 Dans le fichier inclus depuis src/fem/finite_elements/simplex3x8_p1.h:15,
                  depuis src/variational_form/bilinear_form/laplacian.c:25:
 src/linear_algebra/matrix/matrix8x4d256.h: Dans la fonction « matrix8x4d256_vector_multiply »:
@@ -17,6 +116,7 @@ Dans le fichier inclus depuis src/linear_algebra/matrix/matrix8x4d256.h:12,
 src/linear_algebra/matrix/matrix8x4.h:151:13: note: « double * » attendu mais l'argument est de type « double (*)[8] »
   151 |     vector4 y)
       |     ~~~~~~~~^
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/bilinear_form/mass_matrix.c -o src/variational_form/bilinear_form/mass_matrix.o
 Dans le fichier inclus depuis src/fem/finite_elements/simplex3x8_p1.h:15,
                  depuis src/variational_form/bilinear_form/mass_matrix.c:25:
 src/linear_algebra/matrix/matrix8x4d256.h: Dans la fonction « matrix8x4d256_vector_multiply »:
@@ -31,9 +131,52 @@ Dans le fichier inclus depuis src/linear_algebra/matrix/matrix8x4d256.h:12,
 src/linear_algebra/matrix/matrix8x4.h:151:13: note: « double * » attendu mais l'argument est de type « double (*)[8] »
   151 |     vector4 y)
       |     ~~~~~~~~^
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/bilinear_form/scatter_to_global_matrix.c -o src/variational_form/bilinear_form/scatter_to_global_matrix.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/coefficient_function.c -o src/variational_form/coefficient_function.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/functional/coefficient_integral.c -o src/variational_form/functional/coefficient_integral.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/functional/coefficient_l2_norm.c -o src/variational_form/functional/coefficient_l2_norm.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/functional/gather_vertex_coordinates.c -o src/variational_form/functional/gather_vertex_coordinates.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/functional/transform_to_reference_cell.c -o src/variational_form/functional/transform_to_reference_cell.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/functional/volume.c -o src/variational_form/functional/volume.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/linear_form/argument_integral.c -o src/variational_form/linear_form/argument_integral.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/linear_form/load_vector.c -o src/variational_form/linear_form/load_vector.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/linear_form/pointwise_projection.c -o src/variational_form/linear_form/pointwise_projection.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/linear_form/scatter_to_global_vector.c -o src/variational_form/linear_form/scatter_to_global_vector.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/variational_form.c -o src/variational_form/variational_form.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/variational_form/variational_form_types.c -o src/variational_form/variational_form_types.o
+ar rv src/variational_form/variational_form.a src/variational_form/assembly/assembly_algorithm.o src/variational_form/bilinear_form/laplacian.o src/variational_form/bilinear_form/mass_matrix.o src/variational_form/bilinear_form/scatter_to_global_matrix.o src/variational_form/coefficient_function.o src/variational_form/functional/coefficient_integral.o src/variational_form/functional/coefficient_l2_norm.o src/variational_form/functional/gather_vertex_coordinates.o src/variational_form/functional/transform_to_reference_cell.o src/variational_form/functional/volume.o src/variational_form/linear_form/argument_integral.o src/variational_form/linear_form/load_vector.o src/variational_form/linear_form/pointwise_projection.o src/variational_form/linear_form/scatter_to_global_vector.o src/variational_form/variational_form.o src/variational_form/variational_form_types.o
 ar: création de src/variational_form/variational_form.a
+a - src/variational_form/assembly/assembly_algorithm.o
+a - src/variational_form/bilinear_form/laplacian.o
+a - src/variational_form/bilinear_form/mass_matrix.o
+a - src/variational_form/bilinear_form/scatter_to_global_matrix.o
+a - src/variational_form/coefficient_function.o
+a - src/variational_form/functional/coefficient_integral.o
+a - src/variational_form/functional/coefficient_l2_norm.o
+a - src/variational_form/functional/gather_vertex_coordinates.o
+a - src/variational_form/functional/transform_to_reference_cell.o
+a - src/variational_form/functional/volume.o
+a - src/variational_form/linear_form/argument_integral.o
+a - src/variational_form/linear_form/load_vector.o
+a - src/variational_form/linear_form/pointwise_projection.o
+a - src/variational_form/linear_form/scatter_to_global_vector.o
+a - src/variational_form/variational_form.o
+a - src/variational_form/variational_form_types.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/solvers/poisson.c -o src/solvers/poisson.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/solvers/projection.c -o src/solvers/projection.o
+ar rv src/solvers/solvers.a src/solvers/poisson.o src/solvers/projection.o
 ar: création de src/solvers/solvers.a
+a - src/solvers/poisson.o
+a - src/solvers/projection.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/benchmarks/common/benchmark_options.c -o src/benchmarks/common/benchmark_options.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/benchmarks/common/mesh_options.c -o src/benchmarks/common/mesh_options.o
+ar rv src/benchmarks/common/benchmarks_common.a src/benchmarks/common/benchmark_options.o src/benchmarks/common/mesh_options.o
 ar: création de src/benchmarks/common/benchmarks_common.a
+a - src/benchmarks/common/benchmark_options.o
+a - src/benchmarks/common/mesh_options.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -isystem "/cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//include" -iquote src src/benchmarks/poisson2d/program_options.c -o src/benchmarks/poisson2d/program_options.o
+gcc -c -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -isystem "/cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//include" -iquote src src/benchmarks/poisson2d/poisson2d_cg_seq.c -o src/benchmarks/poisson2d/poisson2d_cg_seq.o
+gcc -g -Wall -fopenmp -DHAVE_MPI -DHAVE_PETSC -iquote src src/benchmarks/poisson2d/program_options.o src/benchmarks/poisson2d/poisson2d_cg_seq.o src/solvers/solvers.a src/variational_form/variational_form.a src/fem/fem.a src/mesh/mesh.a src/linear_solver/linear_solver.a src/linear_algebra/linear_algebra.a src/util/util.a  -L"/cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib" -lpetsc -L"/cm/shared/modules/generic/mpi/openmpi/4.0.2/lib" -lmpi -lm -o bin/poisson2d_cg
 ld : avertissement : libX11.so.6, requis par /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : libdl.so.2, requis par /cm/shared/dev/modules/generic/apps/linalg/petsc/3.12.2/gcc@9.2.0/openmpi@4.0.2//lib/libpetsc.so, non trouvé (essayez avec -rpath ou -rpath-link)
 ld : avertissement : libudev.so.1, requis par /cm/shared/modules/generic/mpi/openmpi/4.0.2/lib/libmpi.so, non trouvé (essayez avec -rpath ou -rpath-link)
